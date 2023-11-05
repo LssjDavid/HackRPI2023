@@ -27,28 +27,21 @@ medianAge = np.median(newData['age'])
 medianGPA = np.median(newData['gpa'])
 STD = newData[['age','gpa']].std()
 
+
 newData.head() 
 
-z = newData['class_status']
-p= newData['age']
+#creating bar chart on the seeked_treatment portion
+seek = newData['seeked_treatment'].value_counts()
+plt.bar(x=seek.index,height=seek.values,width = 0.5)
+plt.title("Number of Students that Sought Treatment")
 
-myFreq = newData['major'].value_counts()
 
-myFreq.plot(kind='pie')
+#Uncomment to see data separately
+#creating pie chart 
+#plt.pie(newData['seeked_treatment'].value_counts(),labels=['Yes',' No'],startangle=90,autopct='%.1f%%', explode=[0.1, 0]);
+#plt.title("Percentage of Students that Sought Treatment")
+
+
 plt.show()
 
-
-#fig = plt.figure(figsize = (10,7))
-#num = np.array([len(df[df.major==x]),len(df[df.major==y]),plt.pie(num,labels=df['major'].unique()))
-#print(df.head())
-
-
-
-
-
-
-
-#print(df.plot(kind='scatter', x='x', y = 'y'))
-
-#how to make pie chart using matplot in python
 
