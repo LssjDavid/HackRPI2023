@@ -1,5 +1,9 @@
 #HackRPI2023
 
+******* UPDATE *******
+My team and I built a machine learning model that, at RPI's 10th annual hackathon, won the best data science hack!
+**********************
+
 Hi! Our names are Felipe, Sofia, Brina, and David. Our project is a machine learning model that predicts who would and would not seek help in college-aged students.
 
 In this model, we take in a CSV file of students at the college level, the Data was taken from the America On Tech Organization, all credit to the CSV file goes to them. 
